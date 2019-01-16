@@ -525,6 +525,22 @@ def run_test_return_doubled_triangle():
     expected_c = Point(60, 180)
     run_test_instance_variables(t2, expected_a, expected_b, expected_c)
 
+    print()
+    print('---------------------------------------------')
+    print('Test #2')
+    tp1 = Point(10,20)
+    tp2 = Point(30,40)
+    tp3 = Point(50,60)
+    tt = Triangle(tp1,tp2,tp3)
+    tt2 = tt.return_doubled_triangle()
+    expecteda = Point(20,40)
+    expectedb = Point(60,80)
+    expectedc = Point(100,120)
+    print('Expected: ',expecteda,expectedb,expectedc)
+    print('  Actual: ',tt2.a,tt2.b,tt2.c)
+    print('---------------------------------------------')
+
+
 
 def run_test_get_largest_area():
     '''Tests the get_largest_area method of the Triangle class
