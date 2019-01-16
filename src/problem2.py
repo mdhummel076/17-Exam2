@@ -204,7 +204,7 @@ class Triangle(object):
         side3 = self.c.distance_from(self.a)
         perimeter = (side1+side2+side3)*0.5
         area = math.sqrt(perimeter*(perimeter-side1)*(perimeter-side2)*(perimeter-side3))
-        return area
+        return round(area,5)
 
 
     def bigger_triangle(self, triangle2):
@@ -333,7 +333,7 @@ class Triangle(object):
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
 
-        return self.largearea
+        return round(self.largearea,5)
 
 
 ###############################################################################
